@@ -1,0 +1,56 @@
+/* 1. Global Reset: Start with a clean slate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Page Styles */
+html {
+    background-color: #ffeff5; /* Soft pink */
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6; /* Adds breathing room between lines */
+}
+
+/* 3. The Container (The 50-85 Character Rule) */
+.container {
+    max-width: 65ch;    /* Keeps text length accessible */
+    margin: 2rem auto;  /* Centers the page and adds top space */
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 4. Headings (Resetting the "Fake Bold") */
+h1, h3 {
+    font-weight: normal; /* Removes browser default bold */
+    color: #d63384;      /* Darker pink/magenta */
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;    /* Applying "Real Bold" since we loaded it */
+    text-align: center;
+}
+
+/* 5. Image Styling */
+img {
+    max-width: 100%;     /* Makes sure the image doesn't overflow */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+/* 6. List Spacing */
+ul, ol {
+    margin-left: 1.5rem; /* Moves bullets inward */
+    margin-bottom: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem; /* Space between each cat fact */
+}
